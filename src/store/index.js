@@ -12,12 +12,6 @@ export default new Vuex.Store({
       { title: 'Time is Tight' },
       { title: 'Going Home' },
     ]
-    // songs: [
-    //   { artist: 'Moody Blues', title: 'Nights in White Satin' },
-    //   { artist: 'Santana ', title: 'Samba Pa Ti' },
-    //   { artist: 'Booker T and the MGs', title: 'Time is Tight' },
-    //   { artist: 'Mark Knopfler', title: 'Going Home' },
-    // ]
   },
   mutations: {
     addNewSong(state, song) {

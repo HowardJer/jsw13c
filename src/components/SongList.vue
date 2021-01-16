@@ -12,7 +12,6 @@
                     <i class="fas fa-plus" aria-hidden="true"></i>
                 </span>
                 {{ song.title }}
-                <!-- {{ song.artist }} - {{ song.title }} -->
             </a>
             <add-song @addNewSong="addNewSong"></add-song>
         </nav>
