@@ -2,9 +2,9 @@
     <div class="panel-block">
         <form @submit.prevent="addNewSong">
             <div class="field has-addons">
-                <div class="control is-expanded">
+                <!-- <div class="control is-expanded">
                     <input class="input" type="text" placeholder="Artist" v-model="newArtist">
-                </div>
+                </div> -->
                 <div class="control is-expanded">
                     <input class="input" type="text" placeholder="Title" v-model="newTitle">
                 </div>
@@ -21,19 +21,20 @@ export default {
     name: 'AddSong',
     data() {
         return {
-            newArtist: '',
-            newTitle: ''
+            newArtist: ''
+            // newTitle: ''
         }
     },
     methods: {
         addNewSong() {
-            if(this.newArtist && this.newTitle) {
+            // if(this.newArtist && this.newTitle) {
+            if(this.newTitle) {
                 this.$store.commit('addNewSong', {
-                    artist: this.newArtist,
+                    // artist: this.newArtist,
                     title: this.newTitle
                 });
                 this.newArtist = this.newTitle = ''
-                console.log(this.newArtist + ' - ' + this.newTitle)
+                // console.log(this.newArtist + ' - ' + this.newTitle)
             }
         }
     }
